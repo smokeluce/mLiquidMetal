@@ -140,7 +140,8 @@ int main() {
     const int simWidth = 200;
     const int simHeight = 200;
 
-    InitWindow(startWidth, startHeight, "mLiquidMetal by Paul Swonger (covidinsane@gmail.com 02.03.2026)");
+    InitWindow(startWidth, startHeight, "mLiquidMetal by Paul Swonger (covidinsane@gmail.com)");
+    SetWindowTitle("mLiquidMetal by Paul Swonger (covidinsane@gmail.com)");
     SetTargetFPS(60);
 
     // Dark background for chrome contrast
