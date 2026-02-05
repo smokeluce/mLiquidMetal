@@ -50,7 +50,11 @@ struct LiquidSim {
 
         for (int y = 1; y < height - 1; ++y) {
             for (int x = 1; x < width - 1; ++x) {
-                velocityField[idx(x, y)] *= damping;
+                //THIS IS WHERE DAMPING LIVES
+                
+                //Originally:
+                //velocityField[idx(x, y)] *= damping;
+                velocityField[idx(x, y)] *= 0.94f;
                 heightField[idx(x, y)] += velocityField[idx(x, y)];
             }
         }
